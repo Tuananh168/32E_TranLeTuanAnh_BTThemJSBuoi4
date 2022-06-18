@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>32E_TranLeTuanAnh_BTThemJS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 500px;">
+
+        <h3> Bài tập 5 : Viết chương trình nhập vào ngày, tháng, năm (Giả sử nhập đúng, không cần kiểm tra hợp lệ). Tìm ngày, tháng, năm của ngày tiếp theo. Tương tự tìm ngày tháng năm của ngày trước đó.
+
+        </h3>
+
+        <div class="form-group d-flex">
+            <input type="number" class="form-control mr-3" id="nhapNgay" placeholder="Nhập Ngày">
+            <input type="number" class="form-control mr-3" id="nhapThang" placeholder="Nhập Tháng">
+            <input type="number" class="form-control mr-3" id="nhapNam" placeholder="Nhập Năm">
+        </div>
+        <button class="form-control btn btn-success mt-3 w-25 mr-3" id="ngayHomQua">Ngày Hôm Qua</button>
+        <button class="form-control btn btn-success mt-3 w-25" id="ngayMai">Ngày Mai</button>
+
+        <div class="form-control alert alert-primary mt-3 w-25" id="ketQua_b5"></div>
+        <hr>
+
+        <h3>Bài Tập 6 :Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày. (bao gồm tháng của năm nhuận).
+        </h3>
+
+        <div class=" form-group d-flex ">
+            <input type="number" id="month" class="form-control mr-3 w-25" placeholder="Nhập Tháng ">
+            <input type="number" id="year" class="form-control w-25 mr-3" placeholder="Nhập Năm">
+            <button class="btn btn-success" id="btnTinhNgay">Tính ngày</button>
+        </div>
+        <div class="alert alert-primary form-control" id="ketQua_b6"></div>
+
+        <hr>
+        <h3>Bài Tập 7 : Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc nó.</h3>
+
+        <div class="form-group d-flex">
+            <input type="number" id="nhapSo_7" class="form-control mr-3 w-25" placeholder="Nhập số 3 chữ số">
+            <button class="btn btn-success" id="btnDocSo">Đọc số</button>
+        </div>
+        <div class="alert alert-primary form-control w-25" id="ketQua_b7"></div>
+
+        <hr>
+        <h3>Bài Tập 8 : Cho biết tên và tọa độ nhà của 3 sinh viên. Cho biết tọa độ của trường đại học. Viết chương trình in tên sinh viên xa trường nhất.</h3>
+
+        <div class="form-group">
+            <div>
+                <p style="font-size: 30px;">Sinh Viên 1</p>
+                <div class="d-flex">
+                    <input type="text" id="nhapTen_hs1" class="form-control mr-3 w-25" placeholder="Nhập tên">
+                    <input type="number" id="toaDoX_hs1" class="form-control mr-3 w-25" placeholder="Nhập tọa độ X">
+                    <input type="number" id="toaDoY_hs1" class="form-control w-25" placeholder="Nhập tọa độ Y">
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 30px;">Sinh Viên 2</p>
+                <div class="d-flex">
+                    <input type="text" id="nhapTen_hs2" class="form-control mr-3 w-25" placeholder="Nhập tên">
+                    <input type="number" id="toaDoX_hs2" class="form-control mr-3 w-25" placeholder="Nhập tọa độ X">
+                    <input type="number" id="toaDoY_hs2" class="form-control w-25" placeholder="Nhập tọa độ Y">
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 30px;">Sinh Viên 3</p>
+                <div class="d-flex">
+                    <input type="text" id="nhapTen_hs3" class="form-control mr-3 w-25" placeholder="Nhập tên">
+                    <input type="number" id="toaDoX_hs3" class="form-control mr-3 w-25" placeholder="Nhập tọa độ X">
+                    <input type="number" id="toaDoY_hs3" class="form-control w-25" placeholder="Nhập tọa độ Y">
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 30px;">Trường học</p>
+                <div class="d-flex">
+                    <input type="number" id="toaDoX_th" class="form-control mr-3 w-25" placeholder="Nhập tọa độ X">
+                    <input type="number" id="toaDoY_th" class="form-control mr-3 w-25" placeholder="Nhập tọa độ Y">
+                </div>
+            </div>
+
+
+            <button class="btn btn-success mt-3" id="btnTim">Tìm</button>
+            <div class="alert alert-primary form-control mt-3 w-30" id="ketQua_b8"></div>
+        </div>
+    </div>
+
+
+    <script src=" ./index.js "></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity=" sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin=" anonymous "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity=" sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin=" anonymous "></script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity=" sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin=" anonymous "></script>
+</body>
+
+</html>
